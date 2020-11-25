@@ -7,9 +7,9 @@ teddyChoose.onchange = function () {
 };
 
 function updateDisplay(teddy) {
-    /*  teddy = teddy.replace(" ", "_");  */
+    teddy = teddy.replace("_", " ");  
     teddy = teddy.toLowerCase();
-    var url = http //localhost:3000/api/teddies;
+    var url = http://localhost:3000/api/teddies;
 
     fetch(url).then(function (response) {
         response.text().then(function (text) {
