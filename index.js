@@ -1,22 +1,19 @@
-var teddieChoose = document.querySelector('select');
+var teddyChoose = document.querySelector('select');
 var colorDisplay = document.querySelector('pre');
 
-teddieChoose.onchange = function() {
-    var teddie = teddieChoose.value;
-    updateDisplay(teddie);
-  };
+teddyChoose.onchange = function () {
+    var teddy = teddyChoose.value;
+    updateDisplay(teddy);
+};
 
-  function updateDisplay(teddie) {
-/*    teddie = teddie.replace(" ", "");
-    teddie = teddie.toLowerCase();  */
-    var url = http://localhost:3000/api/teddies;
+function updateDisplay(teddy) {
+    /*  teddy = teddy.replace(" ", "_");  */
+    teddy = teddy.toLowerCase();
+    var url = http //localhost:3000/api/teddies;
 
-    fetch(url).then(function(response) {
-    response.text().then(function(text) {
-      colorDisplay.textContent = text;
+    fetch(url).then(function (response) {
+        response.text().then(function (text) {
+            colorDisplay.textContent = text;
+        });
     });
-  });
-
-
-
-  
+};
