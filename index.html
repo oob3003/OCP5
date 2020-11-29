@@ -10,12 +10,13 @@
 	<!--la balise canonique-->
 	<link rel="canonical" href="https://oob3003.github.io/OCP5/index.html" />
 
+	<link rel="stylesheet" type="text/css" href="style.css">
 	<!--extrait PROJET 4
 
 	<link rel="shortcut icon" type="image/png" href="favicon.jpg">
 
 	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="style.css">
+	
 	<link rel="stylesheet" type="text/css" href="./css/font-awesome.css">
 	<link rel="stylesheet" type="text/css" href="./css/et-line.css">     -->
 
@@ -34,25 +35,38 @@
 </head>
 
 <body>
-	<header></header>
+	<header>
+		<h1>Mon Ourson Personnalisé</h1>
+	</header>
 
-	<h1>Mon Ourson Personnalisé</h1>
-
-	<form>
-		<label for="teddy-select">Je choisis mon Ourson:</label>
-		<select id="teddies" name="teddy-select">
-			<option>Teddy 1</option>
-			<option>Teddy 2</option>
+	<main>
+		<form>
+			<label for="teddy-select">Je choisis mon Ourson:</label>
+				<select id="teddies" name="teddy-select">
+				<option>Teddy 1</option>
+			<option>Teddy 2
+			
+			</option>	
 			<option>Teddy 3</option>
+			
 			<option>Teddy 4</option>
+			
 			<option>Teddy 5</option>
+			
 		</select>
+		
 	</form>
-
+	<div class="photos">
+		<img src="./images/teddy_1vignette.jpg" alt="Ourson Brun" />
+		<img src="./images/teddy_2vignette.jpg" alt="Ourson Beige" />
+		<img src="./images/teddy_3vignette.jpg" alt="Ourson Double" />
+		<img src="./images/teddy_4vignette.jpg" alt="Ourson T-shirt" />
+		<img src="./images/teddy_5vignette.jpg" alt="Ourson de dos" />
+	</div>
 	<section>
 		<div><button id="validation">Je valide mon choix</button></div>
 	</section>
-
+	</main>
 	<footer></footer>
 	<script type="text/javascript" src="index.js"></script>
 
