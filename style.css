@@ -16,10 +16,21 @@ header {
     align-items: center;
 
 }
-
-#photos {
-    display: flex;
-    flex-direction: row;
-    max-height: 200px;
-    max-width: 200px;
+.portfolio {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 20px;
+    grid-auto-flow: row dense;
+    }   
+    .portfolio__photos {
+        display: flex;
+        flex-direction: row;
+        max-height: 200px;
+        max-width: 200px;
+    }
+    ul {
+        list-style-type: none;
+    }
+    
 }
+

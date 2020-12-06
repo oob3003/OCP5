@@ -1,6 +1,49 @@
-fetch('http://localhost:3000/api/teddies')
-    .then(response => response.json())
-    .then(json => console.log(json))
+let url ="http://localhost:3000/api/teddies";
+
+fetch(url)
+  .then(function(response) {
+    response.json()
+    .then(function(data){
+      data.forEach(element => {
+        console.log(element);
+      })
+    })
+  })
+
+
+    
+/*function requete(images) {
+  var portfolio = document.getElementById("portfolio")
+
+  url.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      portfolio.innerHTML = this.response;
+    } else if (this.readyState == 4 && this.status == 404) {
+      alert('Erreur 404 :/');
+    }
+  }
+};*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*var xhr = "XMLHttpRequest";
@@ -67,9 +110,3 @@ teddyChoose.onchange = function () {
     updateDisplay(teddy);
 };*/
 
-/*function updateDisplay(teddy) {
-    teddy = teddy.replace("_", " ");  
-    teddy = teddy.toLowerCase();
-    
-    
-};*/
